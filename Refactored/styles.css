@@ -1,0 +1,145 @@
+:root {
+ --purpleBrandColor: #38106A;
+ --backgroundWhiteColor: #F9F9F9;
+--blackColor: #000000;
+}
+* {
+ box-sizing: border-box;
+ overflow-x: hidden;
+}
+body {
+ padding: 0px;
+ margin: 0px;
+}
+.navbar {
+ background-color: red !important;
+
+}
+.fullScreenContainer {
+ min-height: 80vh;
+}
+.logoImage {
+ width: 50px;
+ height: 50px;
+}
+.sectionContainer {
+ /* border: 1px solid red; */
+ min-height: 90vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.sectionContainer__img {
+ width: 100%;
+ height: auto;
+ margin-left: -60%;
+}
+
+/* Styles for OrderPage */
+
+.washContainer {
+ background-color: var(--backgroundWhiteColor);
+ 
+}
+.buttons {
+ background-color: var(--blackColor);
+ padding: 10px;
+}
+
+/* Styles for OrderDetails Page */
+.orderDetailsContainer {
+ display: flex;
+}
+
+.orderDetailsContainer__box {
+ background-color: rgba(86, 45, 128, 0.05);
+ padding: 15px;
+ margin-bottom: 15px;
+}
+
+/* Styles for offersDetailsPage */
+
+
+/* LandScape */
+@media only screen and (min-width: 600px ) and 
+(max-width: 992px) {
+ .sectionContainer__listGroup {
+  width: 100% !important;
+ }
+ .sectionContainer_col:nth-child(2) {
+display: none;
+}
+.sectionContainer__img {
+ display: none;
+}
+.dryWashFoldContainer {
+ margin-bottom: 0px !important;
+ margin: auto;
+}
+.ordersSectionContainer {
+ margin-top: 0px !important;
+}
+.washContainer {
+ margin-bottom: 10px;
+}
+.buttonContainer {
+ width: 100% !important;
+}
+.orderDetailsContainer {
+ padding: 0px !important;
+ flex-wrap: wrap;
+ flex-shrink: 100px;
+ flex-grow: 1;
+}
+.orderDetailsContainer_col {
+ width: 80%;
+ margin: auto;
+}
+
+}
+
+/* MobileVersion */
+@media only screen and (max-width: 600px) {
+ .sectionContainer {
+  display: flex;
+ }
+ .sectionContainer_col {
+  width: 100%;
+  height: auto;
+ }
+ .sectionContainer__img{
+  display: none ;
+ }
+ .sectionContainer__listGroup {
+  width: 100% !important;
+ }
+
+ .dryWashFoldContainer {
+  padding: 0px !important;
+  margin: auto;
+  margin-top: 30px;
+ }
+ .ordersSectionContainer {
+  display: block;
+  padding: 0px !important;
+  margin: auto;
+ }
+ .washContainer {
+  padding: 20px !important;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 0px !important;
+ }
+
+ .buttonContainer {
+  width: 100% !important;
+ }
+ .orderDetailsContainer {
+  padding: 0px !important;
+  margin-top: 30px !important;
+ }
+ .orderDetailsContainer_col {
+  width: 100%;
+ }
+}
